@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive Website</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Studio MilleFleur<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#menu">커피</a></li>
+            <li><a href="#wholebeans">커피빈</a></li>
+            <li><a href="#baking">베이킹</a></li>
+            <li><a href="#goods">굿즈</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>좋은 커피.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est,
+                deleniti, voluptatem facere Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Inventore asperiores itaque iure, repellendus magnam
+                sint! In, ipsum. Facere soluta neque, officiis fugit fuga provident
+                laborum nesciunt officia aspernatur aperiam architecto.
+            </p>
+            <a href="#menu" class="btn">밀플레 스페셜티</a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="coffee-title">
+            <h1>메뉴</h1>
+        </div>
+        <hr id="coffeetitle" />
+        <div class="container">
+            <div class="card1">
+                <div class="checkbox" href="#dropdown">
+                    <img src="./Images/kenya.jpg" alt="" />
+                </div>
+                <div class="content" id="dropdown">
+                    <h3>에스프레소</h3>
+                    <h3>아메리카노</h3>
+                    <h3>카푸치노</h3>
+                    <h3>카페 라떼</h3>
+                    <h3>바닐라 라떼</h3>
+                    <h3>카라멜 라떼</h3>
+                    <h3>아인슈페너</h3>
+                </div>
+                <div class="containerprice1">
+                    <div class="content1">
+                        <h3>7.0</h3>
+                        <h3>6.0</h3>
+                        <h3>3.0</h3>
+                        <h3>4.0</h3>
+                        <h3>6.0</h3>
+                        <h3>3.0</h3>
+                        <h3>4.0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="checkbox" href="#dropdown">
+                    <img src="./Images/kenya.jpg" alt="" />
+                </div>
+                <div class="content" id="dropdown">
+                    <h3>핸드 드립</h3>
+                    <h3>콜드브루</h3>
+                </div>
+                <div class="containerprice2">
+                    <div class="content1">
+                        <h3>7.0</h3>
+                        <h3>6.0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="checkbox" href="#dropdown">
+                    <img src="./Images/kenya.jpg" alt="" />
+                </div>
+                <div class="content" id="dropdown">
+                    <h3>차</h3>
+                    <h3>차</h3>
+                    <h3>차</h3>
+                    <h3>차</h3>
+                    <h3>차</h3>
+                </div>
+                <div class="containerprice3">
+                    <div class="content1">
+                        <h3>7.0</h3>
+                        <h3>6.0</h3>
+                        <h3>3.0</h3>
+                        <h3>4.0</h3>
+                        <h3>4.0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="checkbox" href="#dropdown">
+                    <img src="./Images/kenya.jpg" alt="" />
+                </div>
+                <div class="content" id="dropdown">
+                    <h3>차</h3>
+                    <h3>차</h3>
+                    <h3>차</h3>
+                    <h3>차</h3>
+                    <h3>차</h3>
+                </div>
+                <div class="containerprice3">
+                    <div class="content1">
+                        <h3>7.0</h3>
+                        <h3>6.0</h3>
+                        <h3>3.0</h3>
+                        <h3>4.0</h3>
+                        <h3>4.0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wholebeans" id="wholebeans">
+        <div class="beans-title">
+            <h1>커피빈</h1>
+        </div>
+        <nav class="stroke">
+            <ul>
+                <li class="active">
+                    <button id="beandefault" onclick="return ShowContent('houseblend');">하우스블렌드</button>
+                </li>
+                <li>
+                    <button id="so" onclick="return ShowContent('singleorigin');">싱글오리진</button>
+                </li>
+                <li>
+                    <button class="animated-button" tabindex="0"
+                        onclick="return ShowContent('supercoffee');"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>슈퍼프리미엄</button>
+                </li>
+            </ul>
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            <script type="text/javascript">
+                $(document).on('click', 'nav ul li', function () {
+                    $(this).addClass('active').siblings().removeClass('active')
+                });
+            </script>
+        </nav>
+        <div id="houseblend" style="display: block" class="wrapper">
+            <div class="img-area">
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+            </div>
+        </div>
+        <div id="singleorigin" style="display: none" class="wrapper">
+            <div class="img-area">
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+            </div>
+        </div>
+        <div id="supercoffee" style="display: none">
+            <div class="supercoffee container">
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+                <img class="single-img" src="./Images/kenya.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <section class="baking" id="baking">
+        <h1>Yo</h1>
+    </section>
+</body>
+
+</html>
