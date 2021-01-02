@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap');
 
 * {
   margin: 0;
@@ -31,17 +33,24 @@ p {
   color: #111;
 }
 
-.banner {
+#videobg{
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(60%);
+  width: 100%;
+}
+
+.banner{
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(./Images/banner.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: center;
 }
 
 .banner .content {
@@ -50,30 +59,46 @@ p {
 }
 
 .banner .content h2 {
-  font-size: 5em;
-  color: black;
-  opacity: 0.9;
+  position: relative;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 3.75em;
+  font-weight: 400;
+  color: white;
+  animation: fadeIn ease forwards 1s;
 }
 
 .banner .content p {
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: white;
+  margin-top: 30px;
+  animation: fadeIn ease forwards 1s;
+  animation-delay: 1s;
+}
+.banner .bannerbutton{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
 }
 
-.btn {
-  font-size: 1em;
-  color: white;
-  background: #ff0157;
-  display: inline-block;
-  padding: 10px 30px;
-  margin-top: 20px;
-  text-transform: uppercase;
+.banner .bannerbutton a{
+  font-size: 2rem;
   text-decoration: none;
-  letter-spacing: 2px;
-  transition: 0.5s;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
-.btn:hover {
-  letter-spacing: 6px;
+.banner .bannerbutton a:hover{
+  transition: 0.15s ease-in-out;
+  background: #fff;
+  color: #0f0f0f;
 }
 
 header {
@@ -81,21 +106,23 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 10px 100px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 header.sticky {
-  background: #495464;
+  background: #c5a880;
   padding: 10px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border-bottom: none;
 }
 header.sticky .logo {
-  color: white;
+  color: #0f0f0f;
 }
 
 header .logo {
@@ -103,6 +130,7 @@ header .logo {
   font-weight: 700;
   font-size: 2em;
   text-decoration: none;
+  transition: 0.75s ease-out;
 }
 
 header .logo span {
@@ -115,24 +143,29 @@ header .navigation {
 }
 header .navigation li {
   list-style: none;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 header .navigation li a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 0.9em;
+  transition: 0.75s ease-out;
 }
 header.sticky .navigation li a {
-  color: white;
+  color: #0f0f0f;
 }
 header .navigation li a:hover {
-  color: #ff0157;
+  transition: none;
 }
 
 #menu {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #bbbfca;
+  background-color: white;
 }
 .coffee-title h1 {
   font-family: "Noto Sans KR", sans-serif;
@@ -570,12 +603,15 @@ nav.stroke ul li.active #so:after {
   height: 500px;
 }
 @keyframes fadeIn {
-  from {
+  from { 
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
   }
+
   to {
     opacity: 1;
+    -webkit-transform: none;
     transform: none;
   }
 }

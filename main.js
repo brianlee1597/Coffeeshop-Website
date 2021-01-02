@@ -21,3 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).on('click', 'nav ul li', function () {
     $(this).addClass('active').siblings().removeClass('active')
 });
+
