@@ -23,7 +23,7 @@ nav .insta {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 1.6rem;
-  transition: 0.75s ease-out;
+  transition: 0.5s ease-out;
 }
 nav.sticky .insta {
   filter: none;
@@ -54,7 +54,7 @@ nav .nav-links li a {
   text-decoration: none;
   align-items: center;
   text-transform: uppercase;
-  transition: 0.75s ease-out;
+  transition: 0.5s ease-out;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -149,8 +149,16 @@ nav.stroke .nav-links li {
   li.fade {
     opacity: 1;
   }
+  /*making sure the link color stays same when scrolling by
+  accident during vertical screen mode*/
   nav.sticky .nav-links li a {
     color: #f2f5f7;
+  }
+  .nav-links li a:hover {
+    color: #0f0f0f;
+  }
+  nav.sticky .nav-links li a:hover {
+    color: #0f0f0f;
   }
 }
 /*Animating Hamburger Icon on Click*/
