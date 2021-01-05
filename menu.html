@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menustyle.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="scrollCue.css" />
-    <title>Studio MilleFleur</title>
+    <title>Menu</title>
   </head>
-
   <body>
-    <!--Home Page Nav Section Start-->
     <nav>
       <a
         target="_blank"
@@ -53,45 +52,15 @@
     <script src="nav.js"></script>
     <!--Home Page Nav Section End-->
 
-    <!--Home Page Banner Section Start-->
-    <section class="banner" id="banner">
-      <video id="videobg" autoplay muted loop>
-        <source src="./Images/video.mp4" type="video/mp4" />
-      </video>
-      <div class="content">
-        <h2 data-cue="slideInUp">Quality Coffee Since 2017</h2>
-        <p data-cue="slideInUp">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
-      </div>
-      <div class="bannerbutton">
-        <a href="#introduction" class="button" id="bannerbutton">▼</a>
-      </div>
+    <section class="pagebanner">
+      <h2 data-cue="slideInUp">Menu.</h2>
+      <p data-cue="slideInUp" data-delay="200">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
     </section>
-    <!--Home Page Banner Section End-->
 
-    <section class="introduction" id="introduction">
-      <div>
-        <h2 data-cue="slideInUp" data-delay="200">We are studio millefleur.</h2>
-      </div>
-      <div>
-        <p data-cue="slideInUp" data-delay="200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          repudiandae veniam neque a obcaecati tempore cum tempora tenetur
-          blanditiis sequi expedita quae pariatur voluptatum accusamus vel hic
-          fugit, deserunt quos.
-        </p>
-      </div>
-      <div
-        class="navimages"
-        data-cues="fadeIn"
-        data-group="images"
-        data-delay="200"
-      >
-        <img src="./Images/banner1.jpg" alt="" />
-        <img src="./Images/banner1.jpg" alt="" />
-        <img src="./Images/banner1.jpg" alt="" />
-      </div>
+    <section id="introduction">
+      <h2>Espresso-Based</h2>
     </section>
 
     <script src="scrollCue.min.js"></script>
