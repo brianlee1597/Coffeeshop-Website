@@ -126,12 +126,6 @@ html {
   font-size: 0.75rem;
   letter-spacing: 1px;
 }
-#introduction .navimages img {
-  width: 292.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media (max-width: 800px) {
   #introduction p {
     text-transform: uppercase;
