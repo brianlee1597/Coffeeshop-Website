@@ -3,17 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 
 html {
-  background-color: #0f0f0f;
+  background-color: #e6e6e6;
 }
 
 .pagebanner {
-  background-color: #e6e6e6;
+  background-image: url(./Images/banner.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 500px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #e6e6e6;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 
 @media screen and (min-width: 500px) {
@@ -55,25 +68,11 @@ html {
 
 #espresso {
   background-color: #0f0f0f;
-  height: 900px;
-}
-
-#espresso h1 {
-  text-transform: uppercase;
-  color: #e6e6e6;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 25px;
-  padding-left: 10%;
-  padding-right: 10%;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 2.5rem;
 }
 
 @media screen and (max-width: 700px) {
   .swiper-container {
-    height: 60%;
+    height: 600px;
     width: 100%;
     overflow: hidden;
   }
@@ -81,7 +80,7 @@ html {
     position: relative;
   }
 #espressopic {
-    background: linear-gradient(0deg, rgba(15,15,15,1) 0%, transparent 25%,rgba(15,15,15,1) 75%, rgba(15,15,15,1) 100%), url(./Images/espresso.jpg);
+    background: linear-gradient(0deg, transparent 0%, transparent 25%,rgba(15,15,15,1) 75%, rgba(15,15,15,1) 100%), url(./Images/espresso.jpg);
     background-size: cover;
     position: absolute;
     float: none;
@@ -140,6 +139,130 @@ html {
     color: #e6e6e6;
   }
 }
+@media screen and (min-width: 700px){
+
+  .swiper-container {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .swiper-slide{
+    position: relative;
+  }
+#espressopic {
+    background: linear-gradient(0deg, transparent 0%, transparent 15%,rgba(15, 15, 15, 0.747) 75%, rgba(15,15,15,1) 100%), url(./Images/pexels-di-bella-coffee-1233528.jpg);
+    background-size: cover;
+    position: absolute;
+    background-position-y: bottom;
+    float: none;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
+#americanopic{
+  background: linear-gradient(0deg, rgba(15,15,15,1) 0%, transparent 15%,rgba(15,15,15,1) 75%, rgba(15,15,15,1) 100%), url(./Images/pexels-karolina-grabowska-4195602.jpg);
+    background-size: cover;
+    background-position-y: center;
+    position: absolute;
+    float: none;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+#cappuccinopic{
+  background: linear-gradient(0deg, rgba(15,15,15,1) 0%, transparent 15%,rgba(15,15,15,1) 75%, rgba(15,15,15,1) 100%), url(./Images/pexels-chevanon-photography-302899\ \(1\).jpg);
+    background-size: cover;
+    background-position-y: center;
+    position: absolute;
+    float: none;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+  .swiper-slide h3{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: "Playfair Display SC", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #e6e6e6;
+    z-index: 1;
+  }
+  .swiper-slide h2 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: #e6e6e6;
+    z-index: 1;
+  }
+  .swiper-slide p {
+    margin-top: 135px;
+    margin-left: 50px;
+    margin-right: 50%;
+    text-transform: uppercase;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #e6e6e6;
+  }
+}
+
+#filtercoffee{
+  background-color: #0f0f0f;
+}
+#filtercoffee .images{
+  padding-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#filtercoffee .images img{
+  width: 500px;
+  height: auto;
+}
+@media(max-width: 800px){
+  #filtercoffee .images{
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  #filtercoffee .images img{
+    width: 90%;
+    padding-top: 0px;
+    padding-bottom: 25px;
+  }
+}
+#tea{
+  height: 700px;
+}
+#tea h1{
+color: #0f0f0f;
+}
+
+#tea .image1,
+#tea .image2,
+#tea .image3{
+  padding-right: 5px;
+}
+
+#tea .image1 img,
+#tea .image2 img,
+#tea .image3 img{
+  padding-left: 10px;
+  width: 175px;
+  height: 300px;
+
+}
+
 .swiper-pagination{
   height: 30px;
 }
@@ -150,11 +273,12 @@ html {
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background: #532e1c;
+  background: #fde8cd;
 }
 .swiper-button-next, .swiper-button-prev{
   padding-left: 10px;
   padding-right: 10px;
   color: white;
   opacity: .7;
+  border: none;
 }
