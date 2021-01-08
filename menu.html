@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="nav.css" />
   <link rel="stylesheet" href="scrollCue.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="menustyle.css" />
@@ -36,7 +35,7 @@
   <script src="main.js"></script>
   <!--Home Page Nav Section End-->
 
-  <section class="pagebanner" style="background-image: url(./Images/banner.jpg);">
+  <section id="pagebanner" class="pagebanner">
     <h2 data-cue="slideInUp">Menu.</h2>
     <p data-cue="slideInUp" data-delay="200">
       좋은 커피, 좋은 커피, 맛있는 커피, 맛있는 커피
@@ -93,7 +92,7 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis rem quisquam, perferendis autem error
           maiores amet a inventore tempora sequi dolore at asperiores quod libero praesentium debitis nisi adipisci hic?
         </p>
-        <h3>Details on Hand Drip:</h3>
+        <h3>Details on Our Hand Drip Specialties ⤵</h3>
         <div class="fcbutton container">
           <div class="fcbutton" style="float: left;">
             <a href="">도구</a>
@@ -104,7 +103,7 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr class="inversehr">
     <div class="container">
       <div class="image" style="float: left;">
         <img src="./Images/pexels-di-bella-coffee-1233528.jpg" alt="" width="500px" height="300px">
@@ -151,7 +150,6 @@
         <h3>로즈 멜랑쥐</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
-
     </div>
   </section>
 
@@ -159,8 +157,31 @@
 
   <section id="others">
     <h1 data-cue="slideInUp">Others</h1>
+    <div class="otherimages">
+      <div class="otherimagesdiv" data-cue="fadeIn">
+        <img src="./Images/pexels-cottonbro-4065894.jpg" alt="">
+        <h3>진저레몬 티</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="otherimagesdiv" data-cue="fadeIn">
+        <img src="./Images/pexels-cottonbro-4065894.jpg" alt="">
+        <h3>말차 라떼</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="otherimagesdiv" data-cue="fadeIn">
+        <img src="./Images/pexels-cottonbro-4065894.jpg" alt="">
+        <h3>쇼콜라 라떼</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="otherimagesdiv" data-cue="fadeIn">
+        <img src="./Images/pexels-cottonbro-4065894.jpg" alt="">
+        <h3>콜드브루(터치)</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
   </section>
 
+  <a href="#pagebanner" id="backtotop">Back to Top</a>
   <!-- Swiper JS Library-->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

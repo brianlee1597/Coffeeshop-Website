@@ -1,4 +1,4 @@
-/*to switch between content on the same section on whole beans nav.
+//to switch between content on the same section on whole beans nav.
 function ShowContent(content) {
   document.getElementById("houseblend").style.display = "none";
   document.getElementById("singleorigin").style.display = "none";
@@ -6,7 +6,7 @@ function ShowContent(content) {
   document.getElementById(content).style.display = "block";
 }
 
-//to make sure that house blend button is clicked on page load
+/*to make sure that house blend button is clicked on page load
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("beandefault").click();
 });
