@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+hr{
+  border-bottom: 1px solid white;
+  opacity: 0.5;
+}
+
 /*nav start*/
 nav {
   height: 5rem;
@@ -28,6 +33,17 @@ nav.sticky {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   border-bottom: none;
 }
+/*Styling Logo*/
+#logo{
+  padding-left: 100px;
+  padding-top: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+/*Styling Logo*/
 
 /*Styling instagram link*/
 nav .insta {
@@ -109,7 +125,7 @@ nav.stroke .nav-links li {
     z-index: 3;
     border-bottom: none;
   }
-  .logo {
+  .soclink {
     display: none;
   }
   .hamburger {
@@ -267,6 +283,53 @@ nav.stroke .nav-links li {
   color: #0f0f0f;
 }
 /*Banner End*/
+
+/*Pagebanner Start*/
+.pagebanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+@media screen and (min-width: 500px) {
+  .pagebanner h2 {
+    padding-top: 25px;
+    color: #0f0f0f;
+    font-size: 3.75em;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 200;
+    border-bottom: 1px solid #c5a880;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pagebanner h2 {
+    padding-top: none;
+    color: #0f0f0f;
+    font-size: 3.75em;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 200;
+    border-bottom: 1px solid #c5a880;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 50px;
+  }
+}
+.pagebanner p {
+  color: #0f0f0f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-top: 50px;
+  padding-right: 25%;
+  padding-left: 25%;
+}
+/*Pagebanner End*/
 
 /*introduction start*/
 #introduction {

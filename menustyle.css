@@ -6,19 +6,9 @@ html {
   background-color: #e6e6e6;
 }
 
-.pagebanner {
-  background-image: url(./Images/banner.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 500px;
-}
-
 h1 {
   text-transform: uppercase;
-  color: #e6e6e6;
+  color: #ecb390;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -27,43 +17,6 @@ h1 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
-}
-
-@media screen and (min-width: 500px) {
-  .pagebanner h2 {
-    padding-top: 25px;
-    color: #0f0f0f;
-    font-size: 3.75em;
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 200;
-    border-bottom: 1px solid #c5a880;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-bottom: 40px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .pagebanner h2 {
-    padding-top: none;
-    color: #0f0f0f;
-    font-size: 3.75em;
-    font-family: "Playfair Display", sans-serif;
-    font-weight: 200;
-    border-bottom: 1px solid #c5a880;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding-bottom: 50px;
-  }
-}
-.pagebanner p {
-  color: #0f0f0f;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding-top: 50px;
-  padding-right: 25%;
-  padding-left: 25%;
 }
 
 #espresso {
@@ -215,53 +168,169 @@ h1 {
 
 #filtercoffee{
   background-color: #0f0f0f;
-}
-#filtercoffee .images{
-  padding-top: 50px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#filtercoffee .images img{
-  width: 500px;
   height: auto;
 }
+#filtercoffee .container{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+#filtercoffee .fcd{
+  width: 500px;
+  height: auto;
+  color: #e6e6e6;
+}
+#filtercoffee h2{
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: "Noto Sans KR",sans-serif;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+#filtercoffee h2 span{
+  font-family: "Playfair Display",sans-serif;
+}
+#filtercoffee h3{
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+#filtercoffee .fcd p{
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+#filtercoffee .fcbutton.container{
+  padding-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#filtercoffee .fcbutton a{
+  font-family: "Noto Sans KR",sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  border: 1px solid white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 @media(max-width: 800px){
-  #filtercoffee .images{
+  #filtercoffee{
+    height: auto;
+    width: 100%;
+  }
+  #filtercoffee h1{
+    padding-bottom: 100px;
+  }
+  #filtercoffee .container{
+    display: flex;
     flex-direction: column;
-    padding-bottom: 0px;
-  }
-  #filtercoffee .images img{
-    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
     padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  #filtercoffee .image{
+    padding-left: 0px;
+  }
+  #filtercoffee .image img{
+    width: 100%;
+    height: auto;
+  }
+  #filtercoffee .fcd{
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #filtercoffee .fcd h2{
+    padding-left: 5%;
+    padding-right: 10%;
     padding-bottom: 25px;
+    text-align: left;
+    font-size: 3rem;
+  }
+  #filtercoffee .fcd h3{
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    text-align: left;
+  }
+  #filtercoffee .fcd p{
+    padding-left: 5%;
+    padding-right: 10%;
+    text-align: left;
+  }
+  #filtercoffee .fcbutton.container{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #filtercoffee .fcbutton{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  #filtercoffee .fcbutton a{
+    font-size: 1rem;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
-#tea{
-  height: 700px;
-}
+
+/*Tea Start*/
 #tea h1{
-color: #0f0f0f;
+color: #295939;
+padding-bottom: 100px;
 }
 
-#tea .image1,
-#tea .image2,
-#tea .image3{
-  padding-right: 5px;
+#tea .teaimages{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
 }
-
-#tea .image1 img,
-#tea .image2 img,
-#tea .image3 img{
-  padding-left: 10px;
-  width: 175px;
-  height: 300px;
-
+#tea .teaimagesdiv{
+  display: inline-block;
+  width: 300px;
+  padding: 10px;
+  padding-bottom: 30px;
 }
+#tea .teaimagesdiv img{
+  width: 300px;
+}
+#tea .teaimagesdiv h3{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #295939;
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+#tea .teaimagesdiv p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+/*Tea End*/
+
+/*Others Start*/
+#others h1{
+  color: #0f0f0f;
+}
+/*Others End*/
 
 .swiper-pagination{
   height: 30px;
