@@ -30,8 +30,6 @@
             <img class="insta" src="./Images/instagram.png" width="30px" height="30px" />
         </a>
     </nav>
-
-    <script src="main.js"></script>
     <!--Home Page Nav Section End-->
 
     <section class="pagebanner" style="background-image: url(./Images/banner.jpg);">
@@ -42,9 +40,9 @@
     </section>
     <section class="typesofbeans">
         <div class="container">
-            <a href="#hb" id="houseblend">하우스 블렌드</a>
-            <a href="#" id="singleorigin">싱글 오리진</a>
-            <a href="#" id="supercoffee">수퍼 프리미엄</a>
+            <a onclick="ShowContent(#hb)" href="#hb" id="houseblend">하우스 블렌드</a>
+            <a onclick="ShowContent(#so)" href="#so" id="singleorigin">싱글 오리진</a>
+            <a onclick="ShowContent(#sp)" href="#sp" id="supercoffee">수퍼 프리미엄</a>
         </div>
     </section>
 
@@ -66,8 +64,15 @@
             <img src="./Images/pexels-cottonbro-4065894.jpg" alt="" width="400px">
         </div>
     </section>
+
+    <section id="so">
+        <h1>test</h1>
+    </section>
+    <section id="sp">
+        <h1>hello</h1>
+    </section>
     <!-- ScrollCue JS Library-->
-    <script src="scrollCue.min.js"></script>
+    <script src="main.js"></script>
     <script>
         scrollCue.init();
     </script>
