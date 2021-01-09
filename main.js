@@ -6,15 +6,10 @@ function ShowContent(content) {
   document.getElementById(content).style.display = "block";
 }
 
-/*to make sure that house blend button is clicked on page load
+//to make sure that house blend button is clicked on page load
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("beandefault").click();
 });
-
-//jQuery for navigation button animation for whole beans section
-$(document).on("click", "nav ul li", function () {
-  $(this).addClass("active").siblings().removeClass("active");
-});*/
 
 //Nav Begin
 const hamburger = document.querySelector(".hamburger");
