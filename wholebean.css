@@ -9,3 +9,157 @@
     display: flexbox;
     height: 271px;
 }
+
+#myDIV {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn {
+    margin-bottom: 15px;
+    display: inline-block;
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: .125em;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    position: relative;
+    background: none;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.btn:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #0f0f0f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active:after,
+.btn:hover:after {
+    width: 60%;
+    left: 20%;
+}
+
+@media (max-width:800px){
+    #houseblend{
+        display: inline-block;
+    }
+    #houseblend div{
+        text-align: center;
+    }
+    #houseblend img{
+        width: 100%;
+        height: auto;
+        margin-bottom: -5px;
+    }
+    #houseblend h2{
+        position: absolute;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 2rem;
+        font-weight: 200;
+        z-index: 10;
+        color: white;
+        margin-top: -100px;
+        padding-left: 20px;
+    }
+    #houseblend p{
+        position: absolute;
+        z-index: 10;
+        color: white;
+        margin-top: -50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #singleorigin{
+        display: inline-block;
+        text-align: center;
+    }
+    #singleorigin img{
+        width: 300px;
+        height: 200px;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width:800px){
+    #houseblend{
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    #houseblend div{
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #houseblend img{
+        width: 300px;
+    }
+    #houseblend h2{
+        position: absolute;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        z-index: 10;
+        color: white;
+        margin-top: -75px;
+        padding-left: 20px;
+    }
+    #houseblend p{
+        position: absolute;
+        z-index: 10;
+        color: white;
+        margin-top: -40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #singleorigin{
+        display: inline-block;
+        text-align: center;
+    }
+    #singleorigin img{
+        width: 250px;
+        height: 175px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    #supercoffee{
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    #supercoffee div{
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #supercoffee img{
+        width: 300px;
+    }
+    #supercoffee h2{
+        position: absolute;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        z-index: 10;
+        color: white;
+        margin-top: -75px;
+        padding-left: 20px;
+    }
+    #supercoffee p{
+        position: absolute;
+        z-index: 10;
+        color: white;
+        margin-top: -40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
