@@ -51,11 +51,12 @@
 }
 
 @media (max-width:800px){
-    #houseblend{
+    #wrapper{
         display: inline-block;
-    }
-    #houseblend div{
         text-align: center;
+    }
+   #hbcontent{
+
     }
     #houseblend img{
         width: 100%;
@@ -63,22 +64,11 @@
         margin-bottom: -5px;
     }
     #houseblend h2{
-        position: absolute;
         font-family: "Noto Sans KR", sans-serif;
         font-size: 2rem;
         font-weight: 200;
-        z-index: 10;
-        color: white;
-        margin-top: -100px;
-        padding-left: 20px;
     }
     #houseblend p{
-        position: absolute;
-        z-index: 10;
-        color: white;
-        margin-top: -50px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     #singleorigin{
         display: inline-block;
@@ -91,75 +81,102 @@
     }
 }
 @media (min-width:800px){
-    #houseblend{
+    #wrapper{
         text-align: center;
-        padding-bottom: 100px;
     }
-    #houseblend div{
+    #hbcontent{
         display: inline-block;
+        text-align: left;
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 75px;
     }
     #houseblend img{
-        width: 300px;
+        width: 500px;
+        height: 300px;
     }
     #houseblend h2{
-        position: absolute;
+        padding-top: 40px;
+        max-width: fit-content;
+        padding-left: 10px;
         font-family: "Noto Sans KR", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 200;
-        z-index: 10;
-        color: white;
-        margin-top: -75px;
-        padding-left: 20px;
+        font-size: 3rem;
+        font-weight: 300;
     }
     #houseblend p{
-        position: absolute;
-        z-index: 10;
-        color: white;
-        margin-top: -40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: fit-content;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
     }
-    #singleorigin{
-        display: inline-block;
+
+    #wrapper{
         text-align: center;
     }
-    #singleorigin img{
-        width: 250px;
-        height: 175px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 20px;
-    }
-    #supercoffee{
-        text-align: center;
-        padding-bottom: 100px;
-    }
-    #supercoffee div{
+    #hbcontent{
         display: inline-block;
+        text-align: left;
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 75px;
     }
     #supercoffee img{
         width: 300px;
+        height: 300px;
     }
     #supercoffee h2{
-        position: absolute;
+        padding-top: 40px;
+        max-width: fit-content;
+        padding-left: 10px;
         font-family: "Noto Sans KR", sans-serif;
-        font-size: 1.5rem;
-        font-weight: 200;
-        z-index: 10;
-        color: white;
-        margin-top: -75px;
-        padding-left: 20px;
+        font-size: 2rem;
+        font-weight: 300;
     }
     #supercoffee p{
-        position: absolute;
-        z-index: 10;
-        color: white;
-        margin-top: -40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: fit-content;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
     }
 }
+
+
+.soimages{
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+.sodiv{
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  .sodiv img{
+      width: 250px;
+  }
+.sodiv h3{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #1c2b2d;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+.sodiv p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+

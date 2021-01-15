@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bakery.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>베이커리</title>
+    <title>Document</title>
 </head>
 
 <body>
+
     <nav>
-        <a href="index.html">Studio Millefleur</a>
+        <a href="index.html"><img class="insta" src="./Images/instagram.png" width="30px" height="30px" /></a>
         <div class="hamburger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -31,19 +33,42 @@
     </nav>
     <!--Home Page Nav Section End-->
 
-    <section class="pagebanner" style="background-image: url(./Images/banner.jpg);">
-        <h2 data-cue="slideInUp">Bakery</h2>
+    <section id="pagebanner" class="pagebanner" style="background-image: url(./Images/banner.jpg);">
+        <h2 data-cue="slideInUp">Bakery.</h2>
         <p data-cue="slideInUp" data-delay="200">
             좋은 커피, 좋은 커피, 맛있는 커피, 맛있는 커피
         </p>
     </section>
 
-    <!-- ScrollCue JS Library-->
+    <section class="container">
+        <div class="product-card">
+            <div class="badge">베스트셀러</div>
+            <div class="product-tumb">
+                <img src="./Images/la-ricetta-classica-del-tiramisu-con-uova-savoiardi-e-mascarpone-1920x1080.jpg"
+                    alt="">
+            </div>
+            <div class="product-details">
+                <h4><a href="">Tiramisu / 티라미수</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="badge">New</div>
+            <div class="product-tumb">
+                <img src="./Images/Simple-Raspberry-Scones-WS-Thumbnail.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <h4><a href="">Scones / 스콘</a></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            </div>
+        </div>
+
+    </section>
+
     <script src="main.js"></script>
     <script>
         scrollCue.init();
     </script>
-    <!-- ScrollCue JS Library-->
 </body>
 
 </html>

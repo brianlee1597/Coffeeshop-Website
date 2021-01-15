@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("beandefault").click();
 });
 
+
+//top Navbar script
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("nav");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
 //Nav Begin
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
@@ -27,13 +33,7 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
 });
 
-//top Navbar script
-window.addEventListener("scroll", function () {
-  const header = document.querySelector("nav");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
-
-//scrollQue js
+//scrollQue js library
 var $jscomp = $jscomp || {};
 $jscomp.scope = {};
 $jscomp.arrayIteratorImpl = function (a) {

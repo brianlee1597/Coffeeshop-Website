@@ -13,7 +13,7 @@
 
 <body>
   <nav>
-    <a href="index.html">Studio Millefleur</a>
+    <a href="index.html"><img class="insta" src="./Images/instagram.png" width="30px" height="30px" /></a>
     <div class="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
@@ -32,7 +32,8 @@
   </nav>
   <!--Home Page Nav Section End-->
 
-  <section id="pagebanner" class="pagebanner">
+  <section id="pagebanner" class="pagebanner"
+    style="background-image: url(./Images/pexels-di-bella-coffee-1233528.jpg);">
     <h2 data-cue="slideInUp">Menu.</h2>
     <p data-cue="slideInUp" data-delay="200">
       좋은 커피, 좋은 커피, 맛있는 커피, 맛있는 커피
@@ -42,7 +43,7 @@
   <section id="espresso">
     <h1 data-cue="slideInUp" data-delay="400">Espresso-Based</h1>
 
-    <div class="swiper-container" data-cue="fadeIn">
+    <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -186,6 +187,7 @@
     var swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
       loop: true,
+      effect: 'fade',
 
       pagination: {
         el: ".swiper-pagination",

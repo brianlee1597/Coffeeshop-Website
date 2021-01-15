@@ -28,7 +28,7 @@ nav {
   width: 100%;
   display: flex;
   position: fixed;
-  z-index: 10;
+  z-index: 1000;
   justify-content: space-between;
   transition: 0.5s ease-out;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -128,7 +128,7 @@ nav.stroke .nav-links li {
   nav {
     position: fixed;
     height: 4rem;
-    z-index: 3;
+    z-index: 1000;
     border-bottom: none;
   }
   .soclink {
@@ -298,13 +298,14 @@ nav.stroke .nav-links li {
   align-items: center;
   text-align: center;
   height: 500px;
-  background-image: url(./Images/pexels-di-bella-coffee-1233528.jpg);
   background-position-y: center;
+  background-size: cover;
+  
 }
 @media screen and (min-width: 500px) {
   .pagebanner h2 {
     padding-top: 25px;
-    color: #0f0f0f;
+    color: white;
     font-size: 3.75em;
     font-family: "Playfair Display", sans-serif;
     font-weight: 200;
@@ -312,6 +313,7 @@ nav.stroke .nav-links li {
     margin-left: 25%;
     margin-right: 25%;
     padding-bottom: 40px;
+    z-index: 10;
   }
 }
 @media screen and (max-width: 500px) {
