@@ -1,5 +1,3 @@
-This is the first project I am building outside of my CS degree curriculum. It's an information/menu/goods website for a local coffee shop in my town. At the time of the first commit a lot has already been built locally by me on VSCode.
+Studio MilleFleur is an menu/information website for a local coffee shop in my town as part of their marketing round. Mainly to be viewable by scan of a QR Code on posters, the website was designed-mobile first with snappy design and easy navigation to give our potential customers a good first impression.
 
-The project is a front-end focused project with what will probably end up being a static website hosted by a web-hosting service. I have built the website using vanilla HTML, CSS, and Javascript, alongside few lines of JQuery to execute my design for the website. Everything was coded by myself except two third-party libraries were used for certain functions: ScrollCue by SamWest (https://github.com/prjct-samwest/scrollCue) and swiper.js.
-
-Thank you for taking interest in this project!
+The goal of this website was to create a front-end focused project using Pure HTML, CSS, and Javascript to solidify the foundations of web development and enhance my understanding of front-end. Everything was coded by myself except two third-party libraries were used for animation and carousel functions: ScrollCue by SamWest (https://github.com/prjct-samwest/scrollCue) and swiper.js.
