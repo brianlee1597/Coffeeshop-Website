@@ -13,7 +13,7 @@
 	<meta name="msapplication-config" content="assets/ico/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>스튜디오 밀플레</title>
+	<title>스튜디오밀플레</title>
 
 	<!-- CSS Plugins -->
 	<link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">
@@ -24,6 +24,7 @@
 	<!-- build:css assets/css/theme.min.css -->
 	<link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrollQue.css">
 	<!-- endbuild -->
 
 </head>
@@ -49,8 +50,7 @@
 				<!-- Navbar navigation: Right -->
 				<ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-						<a class="nav-link" href="about.html">카페 소개</a>
-					</li>
+                        <a href="blog.html" class="nav-link btn disabled">블로그</a>					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="menu.html">메뉴</a>
 					</li>
@@ -92,13 +92,13 @@
 					<div class="col">
 
 						<!-- Heading -->
-						<h2 class="section__preheading section_welcome__preheading text-center text-muted">
+						<h2 class="section__preheading section_welcome__preheading text-center text-muted"data-cue="slideInUp" data-delay="600">
 							Since <span class="text-primary">2017</span>
 						</h2>
-						<h1 class="section__heading section_welcome__heading text-center">
+						<h1 class="section__heading section_welcome__heading text-center" data-cue="slideInUp">
 							Quality Coffee.
 						</h1>
-						<p class="section__subheading section_welcome__subheading text-center text-muted">
+						<p class="section__subheading section_welcome__subheading text-center text-muted" data-cue="slideInUp" data-delay="200">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non illo, alias animi iusto neque,
 							sint corrupti? Laudantium, dignissimos id excepturi facilis, facere saepe quasi placeat
 							praesentium ipsa sapiente illo molestiae?
@@ -106,8 +106,8 @@
 
 						<!-- Button -->
 						<div class="text-center">
-							<a href="#recommended" class="btn btn-outline-primary text-white section-reservation">
-								이달의 추천메뉴
+							<a href="#recommended" class="btn gallerybutton" data-cue="slideInUp" data-delay="400">
+								밀플레 갤러리
 							</a>
 						</div>
 
@@ -119,16 +119,16 @@
 
 	<!-- DISCOVER
 	================================================== -->
-        <div class="discoverheading">
-            <h1>밀플레란<span style="color: #91091e;">?</span></h1>
-        </div>
+    <div class="discoverheading">
+        <h1 data-cue="slideInUp" data-duration="1000">밀플레란<span style="color: #91091e;">?</span></h1>
+    </div>
 	<section class="section section_discover section_no-padding_bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 align-self-start">
 
 					<!-- Description -->
-					<h1 class="section_discover__description">
+					<h1 class="section_discover__description" data-cue="slideInLeft">
 						1. 항상 최고의 커피를 추구하는 커피연구소.
                     </h1>
 
@@ -137,11 +137,11 @@
 
 					<!-- Image -->
 					<div class="section_discover__img">
-						<img src="./assets/img/espresso1.jpg" class="img-fluid" alt="...">
+						<img src="./assets/img/scones.jpg" class="img-fluid" alt="...">
 					</div>
 
 				</div>
-				<div class="col-md-6 align-self-center">
+				<div class="col-md-6 align-self-center" data-cue="slideInRight">
 
 					<!-- Content -->
 					<h2 class="discoverheading2"><span class="span0">정성</span>부터, <span class="span1">도구</span>까지.</h2>
@@ -152,7 +152,7 @@
 					</p>
                     <br>
 
-                    <a href="about.html"><button class="btn btn-outline-dark" style="font-size: 15px;">카페 소개 바로가기</button></a>
+                    <a href="menu.html"><button class="btn btn-outline-dark" style="font-size: 15px;">메뉴 바로가기</button></a>
 
 				</div>
 			</div> <!-- / .row -->
@@ -166,7 +166,7 @@
 				<div class="col-md-2 order-md-2 align-self-end">
 
 					<!-- Description -->
-					<p class="section_discover__description">
+					<p class="section_discover__description" data-cue="slideInRight">
 						2. 최고 품질의 원두만 사용하는 Perfectionist.
 					</p>
 
@@ -179,7 +179,7 @@
 					</div>
 
 				</div>
-				<div class="col-md-6 order-md-1 align-self-center">
+				<div class="col-md-6 order-md-1 align-self-center" data-cue="slideInLeft">
 
 					<!-- Content -->
 					<h2 class="discoverheading2">인하우스. 싱글오리진. 프리미엄.</h2>
@@ -189,7 +189,7 @@
 						voluptates a, et quidem! Quo, et?
 					</p>
                     <br>
-                    <a href="menu.html"><button class="btn btn-outline-dark" style="font-size: 15px;">원두 정보 더보기</button></a>
+                    <a href="beans.html"><button class="btn btn-outline-dark" style="font-size: 15px;">원두 정보 더보기</button></a>
 				</div>
 			</div> <!-- / .row -->
 		</div> <!-- / .container -->
@@ -197,13 +197,13 @@
 
     <!-- DISCOVER
 	================================================== -->
-	<section class="section section_discover section_no-padding_top section_no-padding_bottom">
+	<section class="section section_discover section_no-padding_top">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 align-self-start">
 
 					<!-- Description -->
-					<h1 class="section_discover__description">
+					<h1 class="section_discover__description" data-cue="slideInLeft">
 						3. Quality Bakery to match your coffee tastes.
                     </h1>
 
@@ -216,7 +216,7 @@
 					</div>
 
 				</div>
-				<div class="col-md-6 align-self-center">
+				<div class="col-md-6 align-self-center" data-cue="slideInRight">
 
 					<!-- Content -->
 					<h2 class="discoverheading2">항상 갓 구운 맛있는 bakes.</h2>
@@ -227,188 +227,86 @@
 					</p>
                     <br>
 
-                    <a href=""><button class="btn btn-outline-dark" style="font-size: 15px;">베이커리 바로가기</button></a>
+                    <a href="bakery.html"><button class="btn btn-outline-dark" style="font-size: 15px;">베이커리 바로가기</button></a>
 
 				</div>
 			</div> <!-- / .row -->
 		</div> <!-- / .container -->
 	</section>
-
-	<!-- Recommended-->
-	<section id="recommended" class="section section_dishes">
-
-		<!-- Header -->
-		<div class="container">
-			<div class="row">
-				<div class="col">
-
-					<!-- Heading -->
-					<h1 class="section__heading text-center dishesheading">
-						이달의 추천메뉴
-					</h1>
-                    <p class="section__heading text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Carousel -->
-		<div class="section_dishes__carousel dots-disabled">
-			<div class="section_dishes__carousel__item">
-
-				<!-- Image -->
-				<img src="assets/img/cappuccino.jpg" alt="..." class="section_dishes__carousel__item__img">
-
-				<!-- Body -->
-				<div class="section_dishes__carousel__item__body">
-					<h5 class="section_dishes__carousel__item__body__heading mb-0 featuretitle">
-						카푸치노 <span>$7</span>
-					</h5>
-				</div>
-
-			</div>
-			<div class="section_dishes__carousel__item">
-
-				<!-- Image -->
-				<img src="assets/img/tiramisu.jpg" alt="..." class="section_dishes__carousel__item__img">
-
-				<!-- Body -->
-				<div class="section_dishes__carousel__item__body">
-					<h5 class="section_dishes__carousel__item__body__heading mb-0 featuretitle">
-						이탈리안 티라미수 <span>$10</span>
-					</h5>
-				</div>
-
-			</div>
-			<div class="section_dishes__carousel__item">
-
-				<!-- Image -->
-				<img src="assets/img/matcha.jpg" alt="..." class="section_dishes__carousel__item__img">
-
-				<!-- Body -->
-				<div class="section_dishes__carousel__item__body">
-					<h5 class="section_dishes__carousel__item__body__heading mb-0 featuretitle">
-						말차라떼 <span>$5</span>
-					</h5>
-				</div>
-
-			</div>
-			<div class="section_dishes__carousel__item">
-
-				<!-- Image -->
-				<img src="assets/img/vitamintea.jpg" alt="..." class="section_dishes__carousel__item__img">
-
-				<!-- Body -->
-				<div class="section_dishes__carousel__item__body">
-					<h5 class="section_dishes__carousel__item__body__heading mb-0 featuretitle">
-						비타민차 <span>$9</span>
-					</h5>
-				</div>
-
-			</div>
-		</div> <!-- / .section_dishes__carousel -->
-
-        <a href="" class="menubutton"><button class="btn btn-outline-dark" style="font-size: 15px;">메뉴 바로가기</button></a>
-	</section>
-
-	<!-- NEWSLETTER
+	<!-- GALLERY
 	================================================== -->
-	<section class="section section_gray section_newsletter">
+	<section id="recommended" class="section section_gallery">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-
+	
 					<!-- Heading -->
-					<h2 class="section__heading section_newsletter__heading text-center">
-						Newsletter
+					<h2 class="section__heading text-center discoverheading2">
+						사진 갤러리
 					</h2>
+
+					<!-- Subheading -->
 					<p class="section__subheading text-center">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in
-						cum, beatae maiores quae qui.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					</p>
-
+	
 				</div>
 			</div> <!-- / .row -->
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
+			<div class="row section_gallery__grid">
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
 
-					<!-- Form -->
-					<div id="mc_embed_signup">
-						<form class="section_newsletter__form validate"
-							action="//simpleqode.us15.list-manage.com/subscribe/post-json?u=507744bbfd1cc2879036c7780&id=4523d25e1b&c=?"
-							method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-							target="_blank" novalidate="">
-							<div id="mc_embed_signup_scroll" class="row">
-								<div class="mc-field-group form-group col-md-9">
-									<label for="mce-EMAIL" class="sr-only">E-mail address</label>
-									<input type="email" value="" name="EMAIL" class="required email form-control"
-										id="mce-EMAIL" placeholder="Email address">
-								</div>
-								<div id="mce-responses" class="clear">
-									<div class="response"></div>
-									<div class="response" id="mce-success-response"></div>
-								</div>
-								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-								<div aria-hidden="true" id="mce-hidden-input">
-									<input type="text" name="b_507744bbfd1cc2879036c7780_4523d25e1b" tabindex="-1"
-										value="">
-								</div>
-								<div class="clear col-md-3 text-center">
-									<button type="submit" class="btn btn-primary" id="mc-embedded-subscribe">
-										Subscribe
-									</button>
-								</div>
-							</div>
-						</form>
-					</div> <!-- #mc_embed_signup -->
+					<a href="assets/img/11.jpg" data-lightbox="gallery">
+						<img src="assets/img/11.jpg" class="img-fluid" alt="...">
+					</a>
 
 				</div>
-			</div> <!-- / .row -->
-		</div> <!-- / .container -->
-	</section>
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
 
-	<!-- NEWSLETTER CLONE
-	================================================== -->
-	<!--
-		MailChimp newsletters generally cannot be used more than
-		once on a page, because this will cause HTML IDs conflict.
-		This section solves this problem by calling the 
-		original sign-up form and imitating its behaviour. Please 
-		don't use it without the original sign-up form. Remove 
-		d-none to make it visible.
-	-->
-	<section class="section section_gray section_newsletter d-none">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-
-					<!-- Heading -->
-					<h2 class="section__heading section_newsletter__heading text-center">
-						Newsletter
-					</h2>
-					<p class="section__subheading text-center">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in
-						cum, beatae maiores quae qui.
-					</p>
+					<a href="assets/img/16.jpg" data-lightbox="gallery">
+						<img src="assets/img/16.jpg" class="img-fluid" alt="...">
+					</a>
 
 				</div>
-			</div> <!-- / .row -->
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
 
-					<!-- Form -->
-					<form class="section_newsletter__form section_newsletter__form_clone">
-						<div class="row">
-							<div class="form-group col-md-9">
-								<label class="sr-only">E-mail address</label>
-								<input type="email" class="form-control" placeholder="Email address">
-							</div>
-							<div class="col-md-3 text-center">
-								<button type="submit" class="btn btn-primary">
-									Subscribe
-								</button>
-							</div>
-						</div>
-					</form>
+					<a href="assets/img/13.jpg" data-lightbox="gallery">
+						<img src="assets/img/13.jpg" class="img-fluid" alt="...">
+					</a>
+
+				</div>
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
+
+					<a href="assets/img/15.jpg" data-lightbox="gallery">
+						<img src="assets/img/15.jpg" class="img-fluid" alt="...">
+					</a>
+
+				</div>
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
+
+					<a href="assets/img/14.jpg" data-lightbox="gallery">
+						<img src="assets/img/14.jpg" class="img-fluid" alt="...">
+					</a>
+
+				</div>
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
+
+					<a href="assets/img/18.jpg" data-lightbox="gallery">
+						<img src="assets/img/18.jpg" class="img-fluid" alt="...">
+					</a>
+
+				</div>
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
+
+					<a href="assets/img/17.jpg" data-lightbox="gallery">
+						<img src="assets/img/17.jpg" class="img-fluid" alt="...">
+					</a>
+
+				</div>
+				<div class="col-6 col-sm-6 col-md-4 section_gallery__grid__item" data-cue="fadeIn">
+
+					<a href="assets/img/12.jpg" data-lightbox="gallery">
+						<img src="assets/img/12.jpg" class="img-fluid" alt="...">
+					</a>
 
 				</div>
 			</div> <!-- / .row -->
@@ -490,6 +388,7 @@
 	<script src="assets/js/theme.js"></script>
 	<!-- endbuild -->
 	<script src="assets/js/custom.js"></script>
+    <script src="scrollQue.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -501,7 +400,7 @@
         });
     });
       </script>
-
+    <script>scrollCue.init();</script>
 </body>
 
 </html>
