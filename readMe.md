@@ -1,3 +1,0 @@
-Studio MilleFleur is an menu/information website for a local coffee shop in my town as part of their marketing round. Mainly to be viewable by scan of a QR Code on posters, the website was designed-mobile first with snappy design and easy navigation to give our potential customers a good first impression.
-
-The goal of this website was to create a front-end focused project using Pure HTML, CSS, and Javascript to solidify the foundations of web development and enhance my understanding of front-end. Everything was coded by myself except two third-party libraries were used for animation and carousel functions: ScrollCue by SamWest (https://github.com/prjct-samwest/scrollCue) and swiper.js.
