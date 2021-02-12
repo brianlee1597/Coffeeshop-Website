@@ -1,2 +1,2 @@
-A freelance job for a local coffee company
+A freelance job for a local coffee company.
 Github repo connected to AWS
