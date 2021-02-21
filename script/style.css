@@ -11723,3 +11723,15 @@ h4 {
   font-family: "Nanum Gothic", sans-serif;
   transition: 0.2s ease-in-out !important;
 }
+.description {
+  margin-top: -10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+  .description {
+    margin-top: -10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}
